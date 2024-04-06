@@ -1,0 +1,151 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body {
+    padding: 1rem;
+    font-size: 15px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto;
+    place-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    background-color: hsl(0, 100%, 100%);
+    border-radius: 0.5rem;
+}
+
+header {
+    margin: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+}
+
+header>h1 {
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.karla-regular {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.karla-bold {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.day {
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.gain {
+    color: hsl(218, 22%, 67%);
+}
+
+.monthly {
+    background-color: hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+.monthly>h1 {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.amount {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.per {
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    opacity: 60%;
+}
+
+button {
+    padding: 0.8rem 5rem;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 0.3rem;
+    width: 100%;
+    color: hsl(0, 100%, 100%);
+    font-weight: 600;
+    border: 0;
+    margin-top: 2rem;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(71, 86%, 49%);
+    color: hsl(204, 43%, 93%);
+}
+
+.why {
+    background-color: hsl(179, 62%, 43%);
+    opacity: 80%;
+    color: hsl(204, 43%, 93%);
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.why>h1 {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.why>p {
+    opacity: 80%;
+    line-height: 1.4;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+.attribution { 
+    font-size: 13px; 
+    text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 426px) {
+
+    .why{
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+}
